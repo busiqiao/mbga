@@ -151,7 +151,7 @@ jooq {
             database {
                 includes = ".*"
                 excludes = "qrtz_.*"
-                inputSchema = "mjga"
+                inputSchema = providers.gradleProperty("database.name").get()
                 forcedTypes {
                     forcedType {
                         name = "varchar"

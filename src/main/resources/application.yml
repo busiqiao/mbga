@@ -36,3 +36,6 @@ jwt:
 static-resource:
   handler: ${RESOURCE_HANDLER:/asset/**}
   locations: ${RESOURCE_LOCATIONS:classpath:public/}
+quartz:
+  job-store:
+    db_name: ${DATABASE_DB}
